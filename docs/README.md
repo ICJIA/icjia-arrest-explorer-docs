@@ -1,1 +1,1 @@
-# ICJIA Criminal Arrest Explorer documentation
+# ICJIA Arrest Explorer documentation
