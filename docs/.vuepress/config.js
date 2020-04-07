@@ -29,6 +29,7 @@ module.exports = {
       "/guide/": [
         "/guide/",
         "/guide/chri",
+        "/guide/data",
         "/guide/explorer",
         "/guide/api",
         "/guide/faq",
