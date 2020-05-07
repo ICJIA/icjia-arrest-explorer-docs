@@ -12,7 +12,7 @@ meta:
 
 ## Welcome 🎉
 
-Welcome to _ICJIA Arrest Explorer_ Documentation site. Here you will find resources prepared to help you to use and understand ICJIA Arrest Explorer.
+Welcome to _ICJIA Arrest Explorer_ Documentation site. Here you will find resources prepared to help you to use and understand _ICJIA Arrest Explorer_.
 
 ### For users
 
