@@ -6,23 +6,23 @@ meta:
 
 # Project Architecture
 
-_ICJIA Arrest Explorer_ consists of multiple parts, or components, each built on many popular open-source projects when possible. Together, they provide an integrated platform for distributing aggregated Illinois CHRI data.
+The Illinois Criminal Justice Information Authority (ICJIA) _Arrest Explorer_ consists of multiple components, each built on many popular open-source projects when possible. Together, these components provide an integrated platform for distributing aggregated Illinois Criminal History Record Information (CHRI) data.
 
 ::: tip
 
-See [the CHRI page on User Guide](../guide/chri.md) to learn more about the Illinois CHRI data.
+Learn more about the [CHRI data](../guide/chri.md) in the User Guide.
 :::
 
 ## Components
 
-_ICJIA Arrest Explorer_ projects consists of the following components:
+_Arrest Explorer_ consists of the following components:
 
 - API database
-- API server ([GitHub](https://github.com/ICJIA/arrest-explorer-api))
-- GUI client ([GitHub](https://github.com/ICJIA/arrest-explorer))
-- Documentation ([GitHub](https://github.com/ICJIA/arrest-explorer-docs))
+- API server ([ICJIA/arrest-explorer-api](https://github.com/ICJIA/arrest-explorer-api))
+- GUI client ([ICJIA/arrest-explorer](https://github.com/ICJIA/arrest-explorer))
+- Documentation ([ICJIA/arrest-explorer-docs](https://github.com/ICJIA/arrest-explorer-docs))
 
-_Figure 1_ below provides a graphical summary of how these components relate to one another.
+_Figure 1_ provides a graphical summary of how these components relate to one another.
 
 <div style="text-align:center">
 <span class="fig-title">Figure 1. Main components</span>
@@ -33,30 +33,28 @@ _Figure 1_ below provides a graphical summary of how these components relate to 
 
 ::: warning NOTE
 
-In _Figure 1_ above,
-
-- the sync icon indicates that data is regenerated periodically;
-- the pin icon indicates that data is fetched from the respective source and then cached; and
-- third-party client is _not_ part of the _ICJIA Arrest Explorer_ project but is included to illustarte potential use cases other than via GUI app.
+- The sync icon indicates that the resource is regenerated periodically.
+- The pin icon indicates that data is fetched from the respective source and then cached.
+- The third-party client is _not_ part of the _Arrest Explorer_ project but is included to illustrate potential use cases other than via GUI app.
 
 :::
 
 ### API database
 
-_ICJIA Arrest Explorer_ API database is a Microsoft SQL Server database containing a set of tables to be served by the API server. These tables are prepared by cleaning and aggregating of the raw CHRI data.
+_Arrest Explorer_ API database is a Microsoft SQL Server database containing a set of tables to be served by the API server. These tables are prepared by cleaning and aggregating of the raw CHRI data.
 
 The database also include [stored procedures](https://docs.microsoft.com/en-us/sql/relational-databases/stored-procedures/stored-procedures-database-engine) for cleaning and aggregating CHRI data to generate API data tables. These stored procedures are executed periodically (annually) when the CHRI data at ICJIA are updated in order to generate API tables with new data.
 
 ::: warning NOTE
 
-If you are an ICJIA R&A Staff member responsible for maintaining the _ICJIA Arrest Explorer_ and needs access to this database, talk to the database administrator to gain read (and write) permission to the API database.
+If you are an ICJIA R&A Staff member responsible for maintaining the _Arrest Explorer_ and needs access to this database, talk to the database administrator to gain read (and write) permission to the API database.
 :::
 
 ### API server
 
-At the core of the _ICJIA Arrest Explorer_ project is API server to distribute the aggregated CHRI data over HTTP. At build, the API server fetches prepared data tables from the API database, caches the data in memory, and serves it.
+At the core of the _Arrest Explorer_ project is API server to distribute the aggregated CHRI data over HTTP. At build, the API server fetches prepared data tables from the API database, caches the data in memory, and serves it.
 
-API server([Github](https://github.com/ICJIA/arrest-explorer-api)) is powered by the following key technologies:
+API server ([ICJIA/arrest-explorer-api](https://github.com/ICJIA/arrest-explorer-api)) is powered by the following key technologies:
 
 - [Node.js](https://nodejs.org/) for the server-side runtime for JavaScript;
 - [TypeScript](https://www.typescriptlang.org/) for the benefits of static typing; and
@@ -64,16 +62,16 @@ API server([Github](https://github.com/ICJIA/arrest-explorer-api)) is powered by
 
 ### GUI client
 
-_ICJIA Arrest Explorer_ GUI client app contains a project landing page (`/`) as well as the interactive data explorer (`/explore`). At build, the GUI client fetches data from the API server, reshapes the data for its use, and caches the data.
+_Arrest Explorer_ GUI client app contains a project landing page (`/`) as well as the interactive data explorer (`/explore`). At build, the GUI client fetches data from the API server, reshapes the data for its use, and caches the data.
 
-GUI client app([Github](https://github.com/ICJIA/arrest-explorer)) is powered by the following key technologies:
+GUI client app ([ICJIA/arrest-explorer](https://github.com/ICJIA/arrest-explorer)) is powered by the following key technologies:
 
 - [Vue.js](https://vuejs.org/) for the JavaScript web UI application framework; and
 - [Vuetify.js](https://vuetifyjs.com/) for Material Design UI components.
 
 ### Documentation
 
-The current site([GitHub](https://github.com/ICJIA/arrest-explorer-docs)) serves as the documentation for the _ICJIA Arrest Explorer_ project and consists of User Agreement, User Guide and Developer Guide.
+The current site ([ICJIA/arrest-explorer-api-docs](https://github.com/ICJIA/arrest-explorer-docs)) serves as the documentation for the _Arrest Explorer_ project and consists of User Agreement, User Guide and Developer Guide.
 
 The documentation site is powered by [VuePress](https://vuepress.vuejs.org/).
 

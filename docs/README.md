@@ -6,23 +6,21 @@ meta:
     content: noindex
 ---
 
-# ICJIA Arrest Explorer
+# Arrest Explorer
 
-<Vuepress/>
-
-## Welcome 🎉
-
-Welcome to _ICJIA Arrest Explorer_ Documentation site. Here you will find resources prepared to help you to use and understand _ICJIA Arrest Explorer_.
+Welcome to The Illinois Criminal Justice Information Authority (ICJIA) _Arrest Explorer_ Documentation site. Here you will find resources prepared to help you to use and understand [_Arrest Explorer_](https://icjia-arrest-explorer.netlify.app).
 
 ### For users
 
-Make sure you read the terms of [User Agreement](./agreement/) before using _ICJIA Arrest Explorer_ data.
+Read the [User Agreement](./agreement/) before using _Arrest Explorer_ data.
 
-View the [User Guide](./guide/) for tips on how to navigate _ICJIA Arrest Explorer_.
+Read the [User Guide](./guide/) for tips on how to navigate _Arrest Explorer_.
 
 ### For developers
 
-If you are a developer and want to know technical details of _ICJIA Arrest Explorer_, please visit the [Developer Guide](./dev-guide/).
+Visit the [Developer Guide](./dev-guide/) for technical details of _Arrest Explorer_.
+
+<Vuepress/>
 
 <div style="padding-bottom: 48px;">
   <FundingStatement />

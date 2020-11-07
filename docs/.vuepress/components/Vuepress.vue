@@ -19,7 +19,7 @@
 }
 
 .vuepress a {
-  color: #999;
+  color: #535353;
   font-weight: bold;
 }
 

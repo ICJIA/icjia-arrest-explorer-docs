@@ -7,18 +7,18 @@ meta:
 
 # Overview
 
-Welcome to _ICJIA Arrest Explorer_ Developer Guide!
+Welcome to The Illinois Criminal Justice Information Authority (ICJIA) _Arrest Explorer_ Developer Guide!
 
-This guide is meant for developers and other curious citizens who are interested in technical details of the _ICJIA Arrest Explorer_ project.
+This guide is meant for developers and other curious citizens who are interested in technical details of the _Arrest Explorer_ project.
 
 ## Contents
 
 - Overview: Current page.
-- [Project Architecture](./architecture.md): Explanation for the _ICJIA Arrest Explorer_ project architecture.
+- [Project Architecture](./architecture.md): Explanation for the _Arrest Explorer_ project architecture.
 
 ## Running locally
 
-You can run its individual elements locally on your workstation. In order to replicate the full _ICJIA Arrest Explorer_ experience, however, you will have to setup proxying for frontend apps.
+You can run its individual elements locally on your workstation. In order to replicate the full _Arrest Explorer_ experience, however, you will have to setup proxying for frontend apps.
 
 ### GUI client
 

@@ -6,22 +6,20 @@ meta:
 
 # API server
 
-_ICJIA Arrest Explore_ disseminates the aggregated data via a web API server. An HTTP request can be sent directly to the server to get _Arrest Explorer_ data without having to rely on the interactive Explorer dashboard.
+The Illinois Criminal Justice Information Authority (ICJIA) _Arrest Explore_ disseminates the aggregated data via a public API server. An HTTP request can be sent to the server to get _Arrest Explorer_ data.
 
 ## Data tables
 
 ::: tip
 
-All data tables provided by the API server are based on the CHRI data. See [the CHRI page](./chri.md) on this User Guide for more on the CHRI data.
-
-Also, see [the Data page](./data.md) on this User Guide for details on the data tables provided by _ICJIA Arrest Explorer_, including the preparation of _Arrest Explorer_ data from the source CHRI data, aggregate units, and grouping variables.
+See the [CHRI page](./chri.md) for more about the original source of data, and the [Data page](./data.md) for more about the provided tables.
 :::
 
 For each aggregate unit (arrests, arrestees, and arrest charges), three groups of tables are available: annual total, aggregates on one additional grouping variable, and aggregates on two additional grouping variables. All counts are annual counts with `arrestyear` as a default grouping variable.
 
-Each data table consists of the following columns: `arrestyear`, grouping variables, and `value`, in that order. For instance, a table for annual total has `arrestyear` and `value` columns, and a table with an additional grouping variable `agegroup` has `arrestyear`, `agegroup`, and `value` columns.
+Each data table consists of the following columns: `arrestyear`, grouping variables, and `value`, in that order. For instance, a table for annual total has `arrestyear` and `value` columns, whereas a table with `agegroup` as a grouping variable has `arrestyear`, `agegroup`, and `value` columns.
 
-Please note that the data tables use encoded values for grouping variables. To get decoded values for the grouping variables, use the "reference" tables at `/ref/[variable]`. See [the reference tables section](#reference-tables) below for more.
+Please note that the data tables use encoded values for grouping variables. To get decoded values for the grouping variables, use the "reference" tables at `/ref/[variable]`. See the [reference tables section](#reference-tables) for more.
 
 ### Arrest tables
 
@@ -88,7 +86,7 @@ Arrest charge tables are generated using four grouping variables in addition to 
 
 #### Two additional grouping variables
 
-Note that `crimetype` and `offensecategory` are not used in the same table since they provide the same information on different levels.
+Note that `crimetype` and `offensecategory` are not used in the same table since they provide the same information at different levels (offense types are subcategories of crime types).
 
 - `/arrestcharges/by-county-and-crimetype`
 - `/arrestcharges/by-county-and-offensecategory`
@@ -99,12 +97,12 @@ Note that `crimetype` and `offensecategory` are not used in the same table since
 ## Reference tables
 
 ::: tip
-See [the "Grouping variables" section on the Data page](./data.md#grouping-variables) for more details.
+See the [Grouping variables section](./data.md#grouping-variables) of the Data page for more details.
 :::
 
 Reference tables provide decoded values for the encoded grouping variables values in data tables. Each reference table has two columns, `id` and `value`, where `id` is the encoded value found in data tables and `value` is the corresponding decoded value.
 
-For example, the reference table for the `agegroup` variable looks like the following:
+For example, the reference table for the `agegroup` variable looks like this:
 
 | id  | value |
 | --- | ----- |
@@ -126,43 +124,41 @@ For example, the reference table for the `agegroup` variable looks like the foll
 - `/ref/offensecategory`
 - `/ref/offenseclass`
 
-## Query options
+## Query parameters
 
-_ICJIA Arrest Explorer_ API provides a small set of query options to serve each data table in a more customized manner. These query options are not available for reference tables at `/ref/[variable]`.
+The _Arrest Explorer_ API provides a small set of query parameters to customize the returned table. These query parameters are not available for reference tables at `/ref/[variable]`.
 
 ### Filter by arrest year
 
-There are two query options, `?maxYear` and `?minYear`, to filter the data on the `arrestyear` column.
+There are two query parameters, `maxYear` and `minYear`, to filter by the `arrestyear` column. For example:
 
-- `?maxYear=[year]` filters out all rows with `arrestyear` higher than the provided `[year]` value.
-- `?minYear=[year]` filters out all rows with `arrestyear` lower than the provided `[year]` value.
+- `?maxYear=2010` filters out all rows with `arrestyear` higher than `2010` value.
+- `?minYear=2010` filters out all rows with `arrestyear` lower than `2010` value.
 
 ### Sort by a column
 
-`?sortBy` query can sort the data on one column or more, each in an ascending (default) or a desending order.
+The `sortBy` parameter can sort the data by one or more variables, each in ascending (default) or descending order. For example:
 
-- `?sortBy=[variable]` sorts the table on the provided `[variable]` in an ascending order. This is equivalent to `?sortBy=[variable]:asc`.
-- `?sortBy=[variable]:desc` sorts the table on the provided `[variable]` in a descending order.
+- `?sortBy=arrestyear` sorts the table by `arrestyear` in ascending order. This is equivalent to `?sortBy=arrestyear:asc`.
+- `?sortBy=arrestyear:desc` sorts the table by `arrestyear` in descending order.
 
-`?sortBy` can take more than one column by which to sort the data table with a comma between columns.
+`sortBy` can take more than one column, with multiple columns separated by commas.
 
-### CSV
+### Format
 
-`?csv` query offers an option to get the data in the comma separated value (CSV) format, popular for data analysis.
+The `csv` parameter specifies the format of the returned table, as either Comma Separated Values (CSV) or JavaScript Object Notation (JSON). For example:
 
 - `?csv=false` returns data in JSON format. This is the default behavior.
 - `?csv=true` returns data in CSV format.
 
-### Examples
+## Examples
 
-The following are some example queries you can send to fetch data with query options:
+The following are some example queries you can send to fetch data with query parameters:
 
-#### Example 1
-
-Arrests by agegroup and county, for arrests in 2015 and before, sorted by county.
+#### Arrests by agegroup and county, for arrests in 2015 and before, sorted by county
 
 - URL path: `/arrests/by-agegroup-and-county?maxYear=2015&sortBy=county`
-- Response in raw (JSON):
+- JSON response:
 
 ```json
 [
@@ -178,7 +174,7 @@ Arrests by agegroup and county, for arrests in 2015 and before, sorted by county
 ]
 ```
 
-- Response in table
+- Formatted:
 
 | arrestyear | agegroup | county | value |
 | ---------- | -------- | ------ | ----- |
@@ -192,12 +188,10 @@ Arrests by agegroup and county, for arrests in 2015 and before, sorted by county
 | 2015       | 3        | 101    | 1234  |
 | 2015       | 3        | 102    | 1234  |
 
-#### Example 2
-
-Arrestees by agegroup and gender, sorted by gender and agegroup both in an descending order.
+#### Arrestees by agegroup and gender, sorted by gender and agegroup both in an descending order
 
 - URL path: `/arrestees/by-agegroup-and-gender?sortBy=gender:desc,agegroup`
-- Response in raw (JSON):
+- JSON response:
 
 ```json
 [
@@ -213,7 +207,7 @@ Arrestees by agegroup and gender, sorted by gender and agegroup both in an desce
 ]
 ```
 
-- Response in table:
+- Formatted:
 
 | arrestyear | agegroup | gender | value |
 | ---------- | -------- | ------ | ----- |
@@ -245,7 +239,7 @@ arrestyear,offenseclass,value
 2019,8,1234
 ```
 
-- Response in table:
+- Formatted:
 
 | arrestyear | offenseclass | value |
 | ---------- | ------------ | ----- |

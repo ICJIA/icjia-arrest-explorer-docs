@@ -1,6 +1,7 @@
 module.exports = {
   title: "Arrest Explorer",
-  description: "Documentation site for ICJIA Arrest Explorer.",
+  description:
+    "Documentation site for the Illinois Criminal Justice Information Authority Arrest Explorer.",
   head: [
     [
       "link",
@@ -23,7 +24,10 @@ module.exports = {
       { text: "User Agreement", link: "/agreement/" },
       { text: "User Guide", link: "/guide/" },
       { text: "Developer Guide", link: "/dev-guide/" },
-      { text: "Arrest Explorer", link: "https://" },
+      {
+        text: "Arrest Explorer",
+        link: "https://icjia-arrest-explorer.netlify.app",
+      },
     ],
     sidebar: {
       "/guide/": [
@@ -36,7 +40,8 @@ module.exports = {
       ],
       "/dev-guide/": ["/dev-guide/", "/dev-guide/architecture"],
     },
-    repo: "bobaekang/icjia-arrest-explorer-docs",
+    repo: "ICJIA/icjia-arrest-explorer-docs",
     repoLabel: "GitHub",
+    searchPlaceholder: "search",
   },
 };

@@ -6,7 +6,7 @@ meta:
 
 # Explorer
 
-_ICJIA Arrest Explorer_ provides an interactive data dashboard on the website, called the Explorer, to facilitate easy exploration of the _Arrest Explorer_ data on the browser for users not familiar with making direct HTTP requests to the API server.
+The Illinois Criminal Justice Information Authority (ICJIA) _Arrest Explorer_ provides an [interactive data dashboard](https://icjia-arrest-explorer.netlify.app), to facilitate exploration of the _Arrest Explorer_ data.
 
 ## Main view
 
@@ -21,7 +21,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum, tellus 
 
 ::: tip
 
-For more details on the available data selections, see [the "Aggregate units" section on the Data page](./data.md#aggregate-units).
+For more details on the available data selections, see the [Aggregate units section](./data.md#aggregate) of the Data page.
 :::
 
 ## Dashboard view
@@ -52,7 +52,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum, tellus 
 
 ::: tip
 
-For more details on the groups, see [the Grouping variables section in the Data page](./data.md##grouping-variables).
+For more details on the groups, see the [Grouping variables section](./data.md##grouping-variables) of the Data page.
 :::
 
 <FundingStatement />
