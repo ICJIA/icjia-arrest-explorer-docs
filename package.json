@@ -1,5 +1,5 @@
 {
-  "name": "icjia-arrest-explorer-docs",
+  "name": "arrest_explorer_docs",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,6 +7,10 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "vuepress": "^1.4.0"
+    "vuepress": "latest"
+  },
+  "dependencies": {
+    "axios": "latest",
+    "vuepress-plugin-fulltext-search": "latest"
   }
 }
