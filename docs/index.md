@@ -1,6 +1,4 @@
----
-title: Introduction
----
+# Introduction
 
 This project makes aggregated Illinois arrest data publicly available, and provides a graphical and programming interface to it.
 

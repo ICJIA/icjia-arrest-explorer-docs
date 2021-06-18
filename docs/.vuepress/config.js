@@ -4,7 +4,8 @@ const tables = [
     "arrests_per_arrestee",
     "arrest_charges",
   ],
-  demographics = ["gender", "age_group", "race"];
+  demographics = ["gender", "age_group", "race"],
+  hyphen = /-/g;
 
 module.exports = {
   title: "Arrest Explorer Docs",
@@ -63,8 +64,19 @@ module.exports = {
     displayAllHeaders: false,
   },
   plugins: ["fulltext-search"],
+  markdown: {
+    anchor: {
+      // this will change in markdown-it-anchor 8.0.0
+      permalinkAttrs: function(slug) {
+        return {
+          "aria-label": "link to " + slug.replace(hyphen, " ") + " section",
+        };
+      },
+    },
+  },
   async additionalPages() {
-    const levels = await require("axios")
+    const underscore = /_/g,
+      levels = await require("axios")
         .get(
           "https://raw.githubusercontent.com/ICJIA/arrest_explorer/master/src/levels.json"
         )
@@ -79,11 +91,13 @@ module.exports = {
                   ? ["arrestcharges"]
                   : ["arrests", "arrestees", "arrests_per_arrestee"];
               s +=
-                "### " +
+                "## " +
                 k +
                 "\n> Values: _" +
                 res.data[k].values.join(", ") +
-                "_\n::: details Levels\n";
+                "_\n::: details " +
+                k.replace(underscore, " ") +
+                " levels\n";
               for (var i = 0, n = res.data[k].label.length; i < n; i++) {
                 s +=
                   res.data[k].index[i] +
@@ -109,7 +123,7 @@ module.exports = {
             {
               default: false,
               description:
-                "Number of individuals arrested (some repeating). Each count corresponds to a unique combination of name and date of birth.",
+                "Number of individuals arrested (some with multiple arrests). Each count corresponds to a unique combination of name and date of birth.",
               value: "arrestees",
             },
             {
@@ -379,6 +393,7 @@ module.exports = {
           "These can be entered after the URL following a `?`, with multiple separated by an `&`.",
           "For example:\n> <a href='https://icjia.illinois.gov/arrestexplorer/?value=arrestees&split=gender' rel='noreferrer' target='_blank'>https://icjia.illinois.gov/arrestexplorer/?**value**=arrestees&**split**=gender</a>",
           "::: tip\nAdd `api/` before the `?` to download from the API.\n:::",
+          "**\\*** denotes default values.",
           write_md(param_info.all),
           "## sort",
           "### Variable names with an optional aspect",
@@ -414,7 +429,6 @@ module.exports = {
             "> For example, `offense_category[label]=homicide&offense_class[mean]>1000`.\\",
             "> `aspect` defaults to `label` if `type` is `!=` or `=`, and to `mean` otherwise, so the aspect could be omitted in this case.",
           ].join("\n"),
-          "**\\*** denotes default values.",
         ].join("\n\n"),
       },
       {
@@ -423,8 +437,8 @@ module.exports = {
         content: [
           "# Graphical Parameters",
           "In addition to the general parameters, these can be included to affect aspects of the graphical interface:",
-          write_md(param_info.graphical),
           "**\\*** denotes default values.",
+          write_md(param_info.graphical),
         ].join("\n\n"),
       },
       {

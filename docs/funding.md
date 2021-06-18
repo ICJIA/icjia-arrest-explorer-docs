@@ -1,6 +1,4 @@
----
-title: Funding
----
+# Funding
 
 ## Notice of Federal Funding and Federal Disclaimer
 
