@@ -23,13 +23,8 @@ module.exports = {
       "link",
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Lato:300,400&display=swap",
+        href: "https://fonts.googleapis.com/icon?family=Material+Icons",
       },
-    ],
-    [
-      "meta",
-      { name: "viewport", content: "width=device-width,initial-scale=1.0" },
     ],
   ],
   themeConfig: {
