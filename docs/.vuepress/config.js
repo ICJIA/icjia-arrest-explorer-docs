@@ -1,5 +1,6 @@
 module.exports = {
   title: "Arrest Explorer",
+  base: "/arrestexplorer/docs/",
   description:
     "Documentation site for the Illinois Criminal Justice Information Authority Arrest Explorer.",
   head: [
