@@ -1,4 +1,6 @@
-# Data
+---
+title: Data
+---
 
 ## Original Data
 
@@ -68,7 +70,7 @@ The criteria for filtered arrest records to be used are as follows:
 Refer to the [Variables section](/api/variables.html) of the API page to view the complete list of _Arrest Explorer_ data tables.
 :::
 
-Using the filtered CHRI data, _Arrest Explorer_ generates a number of aggregate data tables. All aggregates are annual counts and each table is based on a combination of a unit and a set of grouping variables to aggregate the filtered CHRI records. In addition, the aggregation step uses a simple noise injection method in order to prevent extracting information on a specific arrest from the aggregated data.
+Using the filtered CHRI data, _Arrest Explorer_ generates a number of aggregate data tables. All aggregates are annual counts and each table is based on a combination of a unit and a set of [grouping variables](/api/variables.html) to aggregate the filtered CHRI records. In addition, the aggregation step uses a simple noise injection method in order to prevent extracting information on a specific arrest from the aggregated data.
 
 ### Noise injection
 

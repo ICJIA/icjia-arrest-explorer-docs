@@ -1,4 +1,6 @@
-# About Us
+---
+title: About Us
+---
 
 ## Illinois Criminal Justice Information Authority
 

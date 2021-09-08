@@ -12,10 +12,5 @@
   "dependencies": {
     "axios": "latest",
     "vuepress-plugin-fulltext-search": "latest"
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "trailingComma": "es5"
   }
 }

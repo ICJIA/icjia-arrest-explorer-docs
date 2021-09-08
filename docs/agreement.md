@@ -1,4 +1,6 @@
-# User Agreement
+---
+title: User Agreement
+---
 
 ## User Agreement
 
