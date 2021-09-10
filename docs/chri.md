@@ -6,7 +6,7 @@ meta:
 
 # CHRI
 
-The Illinois State Police maintains a database of individually identifiable criminal history record information (CHRI; pronounced "cry"). The Illinois Criminal Justice Information Authority (ICJIA) _Arrest Explorer_ provides an aggregated version of this database. Read this page to learn more about CHRI data as it relates to _Arrest Explorer_.
+The Illinois State Police maintains a database (Computerized Criminal History, or CCH) of individually identifiable criminal history record information (CHRI; pronounced "cry"). Typically both the system and the data it contains are referred to as CHRI. The Illinois Criminal Justice Information Authority (ICJIA) _Arrest Explorer_ provides an aggregated version of this database.
 
 ## Illinois CHRI system
 

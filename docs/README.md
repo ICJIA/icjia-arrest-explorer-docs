@@ -10,13 +10,14 @@ meta:
 
 # Introduction
 
-This project is intended to make aggregate arrest data in Illinois more accessible to the public. Arrest explorer provides aggregate information about arrest based on the computerized criminal history  (CCH) system maintained by the Illinois State Police, this is often also referred to as Criminal History Record Information (CHRI). Arrest explorer has both a web interface as well as an API.
+This project is intended to make aggregate arrest data in Illinois more accessible to the public. While CHRI records are collected primarily for creating individuals' criminal history transcripts and are confidential per state law [[20 ILCS 2630/7](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=350&ChapterID=5)], in de-identified aggregate form they are a unique statewide source of criminal justice data, including demographic and offense-related variables.
+Arrest explorer provides these aggregate data about arrests based on the computerized criminal history  (CCH) system maintained by the Illinois State Police, this is often also referred to as Criminal History Record Information (CHRI).
 
-## What Data is available
+## What Data is Available
 
 Data available via Arrest Explorer are adult arrests where the highest charge (as recorded by the Police) related to the arrest recorded was a class B misdemeanor or higher. This excludes juvenile arrests, as well as arrests for class C misdemeanors and local ordinance violations.
 
-## Data Protection and precision
+## Data Protection and Precision
 
 Many individuals who arrested are innocent and never charged in court, tried, or convicted.  To respect the privacy of the innocent, no personally identifying data is included and it is not possible to query arrest charges alongside demographic information. Moreover, data have been very slightly modified to impede use of the data to re-identify any individual arrestee, specifically:
 
