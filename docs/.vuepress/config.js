@@ -22,27 +22,40 @@ module.exports = {
   themeConfig: {
     logo: "/assets/icjia-logo.png",
     nav: [
-      { text: "User Agreement", link: "/agreement/" },
-      { text: "User Guide", link: "/guide/" },
-      { text: "Developer Guide", link: "/dev-guide/" },
+
+      { text: "User Guide", link: "/" },
+      { text: "User Agreement", link: '/User Agreement' },
+      { text: "Technical Guide", link: "/technical/" },
       {
         text: "Arrest Explorer",
         link: "https://icjia-arrest-explorer.netlify.app",
       },
     ],
-    sidebar: {
-      "/guide/": [
-        "/guide/",
-        "/guide/chri",
-        "/guide/data",
-        "/guide/explorer",
-        "/guide/api",
-        "/guide/faq",
-      ],
-      "/dev-guide/": ["/dev-guide/", "/dev-guide/architecture"],
-    },
+    sidebar: [
+    '',
+    'User Agreement',
+    ['explorer','Using Arrest Explorer'],
+    ['chri','About CHRI Data'],
+
+    {title: 'Technical',
+     collapsable: true,
+     children: [
+        ['/technical/','Technical Overview'],
+        ['/technical/data','Data Procedures'],
+        ['/technical/api','API'],
+        ['/technical/architecture','Architecture']
+
+     ]},
+     'faq'
+
+
+
+    ]
+
+
+    ,
     repo: "ICJIA/icjia-arrest-explorer-docs",
     repoLabel: "GitHub",
     searchPlaceholder: "search",
-  },
+  }
 };
