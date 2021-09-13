@@ -24,7 +24,7 @@ module.exports = {
     nav: [
 
       { text: "User Guide", link: "/" },
-      { text: "User Agreement", link: '/User_Agreement' },
+      { text: "User Agreement", link: '/user_agreement' },
       { text: "Technical Guide", link: "/technical/" },
       {
         text: "Arrest Explorer",
@@ -33,7 +33,7 @@ module.exports = {
     ],
     sidebar: [
     '',
-    'User_Agreement',
+    ['user_agreement','Data User Agreement'],
     ['explorer','Using Arrest Explorer'],
     
 
@@ -44,7 +44,7 @@ module.exports = {
         ['/technical/chri','CHRI Source Data'],
         ['/technical/data','Data in Arrest Explorer'],
         ['/technical/api','API'],
-        ['/technical/Open_Source','Open Source']
+        ['/technical/open_source','Open Source']
      ]},
      'faq'
 

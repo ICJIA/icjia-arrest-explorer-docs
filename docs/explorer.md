@@ -6,7 +6,7 @@ meta:
 
 # Explorer
 
-The Illinois Criminal Justice Information Authority (ICJIA) _Arrest Explorer_ provides an [interactive data dashboard](https://icjia-arrest-explorer.netlify.app), to facilitate exploration of the _Arrest Explorer_ data.
+The Illinois Criminal Justice Information Authority (ICJIA) _Arrest Explorer_ provides an [interactive data dashboard](https://icjia.illinois.gov/arrestexplorer/), to facilitate exploration of the _Arrest Explorer_ data.
 
 ## Main view
 
@@ -15,9 +15,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi interdum, tellus 
 <div style="text-align:center">
 <span class="fig-title">Figure 1. Main view</span>
 
-![Main view screenshot]()
+![Main view screenshot](/assets/MainView.PNG)
 
 </div>
+
+The main view has the following elements you can interact with:
+
+1. The main plot area, here you can see the data and move your mouse over any point and see the underlying number.
+2. The About menu, this provides links to this documentation, the initial info screen, and settings for the dark theme and other overall information about ICJIA and CHRI data.
+3. View as Table: Clicking this alters
 
 ::: tip
 
