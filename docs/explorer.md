@@ -107,7 +107,21 @@ The result is that only 11 counties are shown, however this is determined by the
 
 Returning to the data menu, the fourth and final set of options are related to presentation of the data. These are the _output options_.
 
-![Output Options](4-output)
+![Output Options](/assets/4-output-options.PNG)
+
+The top option will either say _Plot Type_ or _Table Format_ depending on whether _Arrest Explorer_ is in Plot or Table view mode. For plots the options are simply bar or line chart. For Table View, there are three options: tall, mixed, wide. These are primarily of use if there are two breaking variables.
+
+In tall mode, data tables are organized with many rows, with columns labeled as simply _Year_, _County_, or _Gender_ and the output _Arrests_ for example. In mixed format, the columns would still be _Year_ and _County_ but insted of one arrests column there would be two columns for male and female. Finally, wide would have one column for _Year_, but the remaining column headers would be titled Adams_county_male, etc.
+
+When there are two breaking variables in plot mode there is an option _Scale vertical axes per group_. By default, when _Arrest Explorer_ has to show multiple plots, for example when showing arrests by gender for multiple counties, each plot will have the same vertical or y-axis. If this option is selected, each plot will be scaled according to the maximum value of its plot.
+
+In practical terms, having the same vertical scale is good for comparing values between plots. For example if a high population county like DuPage and a low population like Schuyler had the same axes then it would be clear that numbers in DuPage were higher.
+
+![Same Scale](/assets/same_scale.PNG)
+
+However, because the numbers in DuPage might be so much higher, the movement within the Schuyler chart might be hard to see. _Scaling vertical axes per group_ is helpful when its important to show trends within each plot or compare the trends between plots, as can be seen below.
+
+![Different Scale](/assets/different-scale.PNG)
 
 ## The Export Menu
 
