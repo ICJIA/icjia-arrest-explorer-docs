@@ -20,4 +20,8 @@ If you click on the export menu, you will see a link under _Download through the
 
 [https://icjia.illinois.gov/arrestexplorer/api/?split=gender,race](https://icjia.illinois.gov/arrestexplorer/api/?split=gender,race)
 
+Generally, this is the best starting point for using the API, first experiment with the graphics interface, and see how breaking variables and filters are applied.
+
+Once you have a grasp on what is available, you can use one of two provided API example scripts as a starting point to access the API data from third party software such as [R]() or [Python]()
+
 <FundingStatement />
