@@ -51,6 +51,10 @@ This plot is an embedded version of the **graphical interface**, if you have not
 
 > <a href="https://icjia.illinois.gov/arrestexplorer" target="\_blank">icjia.illinois.gov/arrestexplorer</a>
 
+::: tip
+For more guidance, read the full user guide: [Using Arrest Explorer](./explorer)
+:::
+
 You can download its underlying data from the export menu, or through the **programming interface**. For example here is a link to the raw data for the chart above:
 
 > [icjia.illinois.gov/arrestexplorer/api](https://icjia.illinois.gov/arrestexplorer/api)
