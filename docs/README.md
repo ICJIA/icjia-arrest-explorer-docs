@@ -34,11 +34,12 @@ These procedures have minimal impact on analysis of the data in ways that would 
 ## Highlights in the Guide
 
 - Overview: Current page.
+- [Explorer](./explorer): How to use the Arrest Explorer's interactive data explorer.
+- [User Agreement](/user_agreement): The full Data User Agreement.
 - [CHRI](./technical/chri): Details on the _Arrest Explorer_'s data source.
-- [Data](./data.md): Further explanation for the data provided by _Arrest Explorer_.
-- [Explorer](./explorer.md): How to use the Arrest Explorer's interactive data explorer.
-- [API server](./api.md): How to get the _Arrest Explorer_ data directly from the API server.
-- [FAQ](./faq.md): Frequently asked questions and answers.
+- [Data](./technical/data): Further explanation for the data provided by _Arrest Explorer_.
+- [Export](/technical/export-data): How to export data for external use.
+- [API server](./technical/api): How to get the _Arrest Explorer_ data directly from the API server.
 
 ## Using Arrest Explorer
 
