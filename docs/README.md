@@ -38,7 +38,7 @@ These procedures have minimal impact on analysis of the data in ways that would 
 - [User Agreement](/user_agreement): The full Data User Agreement.
 - [CHRI](./technical/chri): Details on the _Arrest Explorer_'s data source.
 - [Data](./technical/data): Further explanation for the data provided by _Arrest Explorer_.
-- [Export](/technical/export-data): How to export data for external use.
+- [Export](./technical/export-data): How to export data for external use.
 - [API server](./technical/api): How to get the _Arrest Explorer_ data directly from the API server.
 
 ## Using Arrest Explorer
