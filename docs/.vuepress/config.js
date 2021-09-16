@@ -37,12 +37,13 @@ module.exports = {
     ['explorer','Using Arrest Explorer'],
     
 
-    {title: 'Technical',
+    {title: 'Technical Guide',
      collapsable: true,
      children: [
         ['/technical/','Technical Overview'],
         ['/technical/chri','CHRI Source Data'],
-        ['/technical/data','Data in Arrest Explorer'],
+       ['/technical/data', 'Data in Arrest Explorer'],
+        ['/technical/export-data', 'Exporting Data'],
         ['/technical/api','API'],
         ['/technical/open_source','Open Source']
      ]},
