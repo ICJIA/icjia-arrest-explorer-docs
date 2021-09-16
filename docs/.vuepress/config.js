@@ -46,8 +46,7 @@ module.exports = {
         ['/technical/export-data', 'Exporting Data'],
         ['/technical/api','API'],
         ['/technical/open_source','Open Source']
-     ]},
-     'faq'
+     ]}
 
 
 
