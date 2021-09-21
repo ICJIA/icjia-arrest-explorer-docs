@@ -23,7 +23,7 @@ When you first open _Arrest Explorer_ you will see a landing screen, this summar
 
 <div style="text-align:center">
 
-![Main view screenshot](/assets/main-view.PNG)
+![Main view screenshot](/assets/main-view.png)
 
 </div>
 
