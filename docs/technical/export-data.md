@@ -20,13 +20,13 @@ PNG and JPEG are picture/photo based options that are similar to files you might
 
 Clicking _Download Data_ will download a file of the selected format, the formats available are CSV (Comma Seperated Values), TSV (Tab Seperated Values), and JSON (JavaScript Object Notation).
 
-_For most users csv is strongly advised_, the CSV format is a simple spreadsheet and can be readily read or importated by Microsoft Excel, Apple Numbers, or programs such as SPSS/SAS/R/SYSTAT. TSV is very similar however it uses tab instead of commas to differenative values, and can be used with the same software. The table formats are the same used as when viewing data as a table, see the section on [Table Formats](#table-formats) under _Adjusting Output Options_ for a brief description. It will often be best to first use the data menu to select the format of the table onscreen and then to export.
+_For most users csv is strongly advised_, the CSV format is a simple spreadsheet and can be readily read or importated by Microsoft Excel, Apple Numbers, or programs such as SPSS/SAS/R/SYSTAT. TSV is very similar however it uses tab instead of commas to differenative values, and can be used with the same software. The table formats are the same used as when viewing data as a table, see the section on [Table Formats](/explorer#table-formats) under _Adjusting Output Options_ for a brief description. It will often be best to first use the data menu to select the format of the table onscreen and then to export.
 
 JSON is available for advanced users. This format is simple database format, if you are not familiar or interested in learning about this format do not use it. When exporting JSON there are three major options: raw, arrays, and objects.
 
 If selected _raw_ will download the entire _Arrest Explorer_ database. This is one exception to the rule that the export menu is specific to the data view. Please be thoroughly familiar with [technical details of what the data is](/technical/data) before doing this, as it is a raw version of the _Arrest Explorer_ database, not the actual CHRI data.
 
-If array is selected, a json will be exported in an array format similar to a spreadsheet table with a header followed by many data rows. If object is select, the json will be structured with each row as a potentially independant object (i.e. header values embedded in each row). These two options also have the option of [Table Format](#table-formats), which in this case determines what the headers included are.
+If array is selected, a json will be exported in an array format similar to a spreadsheet table with a header followed by many data rows. If object is select, the json will be structured with each row as a potentially independant object (i.e. header values embedded in each row). These two options also have the option of [Table Format](/explorer#table-formats), which in this case determines what the headers included are.
 
 ## URL and Embedding links
 
