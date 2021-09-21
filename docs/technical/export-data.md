@@ -4,7 +4,7 @@ The export menu can be accessed with the _Export_ button at the bottom center. *
 
 Once clicked, it will open the following menu:
 
-![Export options](/assets/export-menu.PNG)
+![Export options](/arrestexplorer/docs/assets/export-menu.PNG)
 
 The export menu can be subdivided into four sections: 1) Saving an image of the plot, 2) downloading data, 3) exporting a direct URL and/or embeddable plot, 4) access to the data via API. The details of each setion are describe in detail below.
 
@@ -32,7 +32,7 @@ If array is selected, a json will be exported in an array format similar to a sp
 
 The _Export Menu_ shows a full URL of the current main view under _Link to this plot:_. This link can be used for sending someone else that exact view, for example via e-mail or text message. It may also be used to link to a specific view of Arrest explorer from an article or online. To the other lower right there is an option to _COPY EMBED CODE_, if clicked this will copy a longer URL to the clipboard that can be pasted into an external webpage to show an embedded view of _Arrest Explorer_, such the view below:
 
-<iframe title="Plot of Illinois Arrests by Race, County, and Year" width="100%" height="435" frameborder="0" src="http://localhost:8080/arrestexplorer/?split=race,county&county[mean]>10000&race[mean]>10000&embed"></iframe>
+<iframe title="Plot of Illinois Arrests by Race, County, and Year" width="100%" height="435" frameborder="0" src="https://icjia.illinois.gov/arrestexplorer/?split=race,county&county[mean]>10000&race[mean]>10000&embed"></iframe>
 
 ## API URLs
 

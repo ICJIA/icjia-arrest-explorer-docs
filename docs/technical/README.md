@@ -17,10 +17,10 @@ This section is meant for researchers and data scientists who are interested in 
 
 - [API](/technical/api) : For details about API, which can be used to directly download aggregate data into R and Python scripts, etc.
 
-- [Open Source](/technical/Open_Source) : How to install a local version of Arrest Explorer and/or these documentation if you want to use the Application for your own data, etc.
+- [Open Source](/technical/open_source) : How to install a local version of Arrest Explorer and/or these documentation if you want to use the Application for your own data, etc.
 
 ::: warning
-Any use of the application, its data code, or its source code is subject to the [User Agreement](/User_Agreement)
+Any use of the application, its data code, or its source code is subject to the [User Agreement](/user_agreement)
 :::
 
 ## Architecture of _Arrest Explorer_

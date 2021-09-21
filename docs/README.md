@@ -34,12 +34,12 @@ These procedures have minimal impact on analysis of the data in ways that would 
 ## Highlights in the Guide
 
 - Overview: Current page.
-- [Explorer](./explorer): How to use the Arrest Explorer's interactive data explorer.
+- [Explorer](/explorer): How to use the Arrest Explorer's interactive data explorer.
 - [User Agreement](/user_agreement): The full Data User Agreement.
-- [CHRI](./technical/chri): Details on the _Arrest Explorer_'s data source.
-- [Data](./technical/data): Further explanation for the data provided by _Arrest Explorer_.
-- [Export](./technical/export-data): How to export data for external use.
-- [API server](./technical/api): How to get the _Arrest Explorer_ data directly from the API server.
+- [CHRI](/technical/chri): Details on the _Arrest Explorer_'s data source.
+- [Data](/technical/data): Further explanation for the data provided by _Arrest Explorer_.
+- [Export](/technical/export-data): How to export data for external use.
+- [API server](/technical/api): How to get the _Arrest Explorer_ data directly from the API server.
 
 ## Using Arrest Explorer
 
@@ -52,7 +52,7 @@ This plot is an embedded version of the **graphical interface**, if you have not
 > <a href="https://icjia.illinois.gov/arrestexplorer" target="\_blank">icjia.illinois.gov/arrestexplorer</a>
 
 ::: tip
-For more guidance, read the full user guide: [Using Arrest Explorer](./explorer)
+For more guidance, read the full user guide: [Using Arrest Explorer](/explorer)
 :::
 
 You can download its underlying data from the export menu, or through the **programming interface**. For example here is a link to the raw data for the chart above:
