@@ -29,9 +29,9 @@ The access is granted to allow ICJIA to fulfill its mandate to act as "a central
 While ICJIA is authorized to access CHRI data "for its research, evaluative and statistical activity needs," this access is granted with a set of specific requirements. One such requirement most relevant to _Arrest Explorer_ is that ICJIA shall not publish statistics derived from CHRI data "when the total of arrests, charging decisions, convictions, or sentences is less than ten on a state, county, or local level." At ICJIA, this particular requirement is internally known as the "less than 10" rule.
 
 ::: warning NOTE
-Please refer to the [Preparing _Arrest Explorer_ Data section](./data.md#preparing-arrest-explorer-data) of the Data page to learn more about how _Arrest Explorer_ prepares the data to serve while remaining compliant to the terms of the Memorandum of Understanding.
+Please refer to the [Preparing _Arrest Explorer_ Data section](/arrestexplorer/docs/data#retrieval-and-data-exclusion) of the Data page to learn more about how _Arrest Explorer_ prepares the data to serve while remaining compliant to the terms of the Memorandum of Understanding.
 
-In particular, read the [Noise injection section](./data.md#noise-injection) of the Data page to see how _Arrest Explorer_ copes with the "less than 10" rule.
+In particular, read the [Privacy Protections](/arrestexplorer/docs/data.md#privacy-protections) of the Data page to see how _Arrest Explorer_ copes with the "less than 10" rule.
 :::
 
 For all practical purposes, ICJIA Research & Analysis staff rely on a local copy of the Illinois State Police's CHRI ad hoc database. Direct access to the local database is also limited to only a small number of staff members. Any research project that involves CHRI data conducted, sponsored, or supported by ICJIA must obtain institutional review board approval.
