@@ -4,7 +4,7 @@ The export menu can be accessed with the _Export_ button at the bottom center. *
 
 Once clicked, it will open the following menu:
 
-![Export options](/arrestexplorer/docs/assets/export-menu.PNG)
+![Export options](/assets/export-menu.PNG)
 
 The export menu can be subdivided into four sections: 1) Saving an image of the plot, 2) downloading data, 3) exporting a direct URL and/or embeddable plot, 4) access to the data via API. The details of each setion are describe in detail below.
 
@@ -20,13 +20,13 @@ PNG and JPEG are picture/photo based options that are similar to files you might
 
 Clicking _Download Data_ will download a file of the selected format, the formats available are CSV (Comma Seperated Values), TSV (Tab Seperated Values), and JSON (JavaScript Object Notation).
 
-_For most users csv is strongly advised_, the CSV format is a simple spreadsheet and can be readily read or importated by Microsoft Excel, Apple Numbers, or programs such as SPSS/SAS/R/SYSTAT. TSV is very similar however it uses tab instead of commas to differenative values, and can be used with the same software. The table formats are the same used as when viewing data as a table, see the section on [Table Formats](/arrestexplorer/docs/explorer#table-formats) under _Adjusting Output Options_ for a brief description. It will often be best to first use the data menu to select the format of the table onscreen and then to export.
+_For most users csv is strongly advised_, the CSV format is a simple spreadsheet and can be readily read or importated by Microsoft Excel, Apple Numbers, or programs such as SPSS/SAS/R/SYSTAT. TSV is very similar however it uses tab instead of commas to differenative values, and can be used with the same software. The table formats are the same used as when viewing data as a table, see the section on [Table Formats](/explorer#table-formats) under _Adjusting Output Options_ for a brief description. It will often be best to first use the data menu to select the format of the table onscreen and then to export.
 
 JSON is available for advanced users. This format is simple database format, if you are not familiar or interested in learning about this format do not use it. When exporting JSON there are three major options: raw, arrays, and objects.
 
-If selected _raw_ will download the entire _Arrest Explorer_ database. This is one exception to the rule that the export menu is specific to the data view. Please be thoroughly familiar with [technical details of what the data is](/arrestexplorer/docs/technical/data) before doing this, as it is a raw version of the _Arrest Explorer_ database, not the actual CHRI data.
+If selected _raw_ will download the entire _Arrest Explorer_ database. This is one exception to the rule that the export menu is specific to the data view. Please be thoroughly familiar with [technical details of what the data is](/technical/data) before doing this, as it is a raw version of the _Arrest Explorer_ database, not the actual CHRI data.
 
-If array is selected, a json will be exported in an array format similar to a spreadsheet table with a header followed by many data rows. If object is select, the json will be structured with each row as a potentially independant object (i.e. header values embedded in each row). These two options also have the option of [Table Format](/arrestexplorer/docs/explorer#table-formats), which in this case determines what the headers included are.
+If array is selected, a json will be exported in an array format similar to a spreadsheet table with a header followed by many data rows. If object is select, the json will be structured with each row as a potentially independant object (i.e. header values embedded in each row). These two options also have the option of [Table Format](/explorer#table-formats), which in this case determines what the headers included are.
 
 ## URL and Embedding links
 
@@ -38,4 +38,4 @@ The _Export Menu_ shows a full URL of the current main view under _Link to this 
 
 The final section _Download through the API:_ provides a URL that accesses the API directly. If clicked this will download the data in the format selected under _Download Data_. This link however can be also embedded in computer programs or altered to directly access data through the API.
 
-This is provided as convenience for those using the API. For more details on the API, refer to the [API section](/arrestexplorer/docs/technical/api).
+This is provided as convenience for those using the API. For more details on the API, refer to the [API section](/technical/api).
