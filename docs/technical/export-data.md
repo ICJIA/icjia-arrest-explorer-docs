@@ -4,7 +4,7 @@ The export menu can be accessed with the _Export_ button at the bottom center. *
 
 Once clicked, it will open the following menu:
 
-![Export options](/assets/export-menu.PNG)
+![Export options](/arrestexplorer/docs/assets/export-menu.PNG)
 
 The export menu can be subdivided into four sections: 1) Saving an image of the plot, 2) downloading data, 3) exporting a direct URL and/or embeddable plot, 4) access to the data via API. The details of each setion are describe in detail below.
 

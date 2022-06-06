@@ -27,7 +27,7 @@ _Figure 1_ provides a graphical summary of how these components relate to one an
 <div style="text-align:center">
 <span class="fig-title">Figure 1. Main components</span>
 
-![Components diagram](/assets/diagram-components.png)
+![Components diagram](/arrestexplorer/docs/assets/diagram-components.png)
 
 </div>
 
@@ -82,7 +82,7 @@ _Figure 2_ below provides a graphical summary of how the components are deployed
 <div style="text-align:center">
 <span class="fig-title">Figure 2. Deployment strategy</span>
 
-![Components diagram](/assets/diagram-deployment.png)
+![Components diagram](/arrestexplorer/docs/assets/diagram-deployment.png)
 
 </div>
 

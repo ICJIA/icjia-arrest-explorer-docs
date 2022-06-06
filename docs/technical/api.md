@@ -135,9 +135,9 @@ test <- CHRI_api(value = 'arrestees', split ='race,county', su = 'county[label]=
 
 ```
 
-The R example script is available [here](/assets/api_example.R).
+The R example script is available [here](/arrestexplorer/docs/assets/api_example.R).
 
-There is also an example script written in Python available [here](/assets/api_example.py).
+There is also an example script written in Python available [here](/arrestexplorer/docs/assets/api_example.py).
 
 Note that the Python and R examples were written by different authors and do different demonstration tasks. Both however access multiple basic functions of the API using their respective languages.
 
