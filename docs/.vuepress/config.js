@@ -1,6 +1,6 @@
 module.exports = {
   title: "Arrest Explorer",
-  // base: "/",
+  base: "/arrestexplorer/docs/",
   description:
     "Documentation site for the Illinois Criminal Justice Information Authority Arrest Explorer.",
   head: [
@@ -27,7 +27,7 @@ module.exports = {
       { text: "Technical Guide", link: "/technical/" },
       {
         text: "Arrest Explorer",
-        link: "https://icjia-arrest-explorer.netlify.app",
+        link: "https://icjia.illinois.gov/arrestexplorer",
       },
     ],
     sidebar: [
