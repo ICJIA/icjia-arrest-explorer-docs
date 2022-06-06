@@ -59,7 +59,8 @@ You can download its underlying data from the export menu, or through the **prog
 
 > [icjia.illinois.gov/arrestexplorer/api](https://icjia.illinois.gov/arrestexplorer/api)
 
-For more about using the data, how it is retrieved and aggregated, about Application Programming Interface, or how _Arrest Explorer_ works, see the [Technical](/arrestexplorer/docs/technical/) pages.
+For more about using the data, how it is retrieved and aggregated, about Application Programming Interface, or how _Arrest Explorer_ works, see the
+[Technical](technical/) pages.
 
 For more technical details, see the [GitHub repository](https://github.com/ICJIA/arrest_explorer).
 
