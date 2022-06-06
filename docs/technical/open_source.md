@@ -13,7 +13,7 @@ This guide is meant for developers and other curious citizens who are interested
 
 ## Running locally
 
-It is possible to install a copy of _Arrest Explorer_ locally and to modify it. This is useful if you are interested in learning how to build a similar application. Please do note that releasing copies of Arrest Explorer is not permitted by the [User Agreement](/user_agreement), though using the code with other data and without the ICJIA logo is.
+It is possible to install a copy of _Arrest Explorer_ locally and to modify it. This is useful if you are interested in learning how to build a similar application. Please do note that releasing copies of Arrest Explorer is not permitted by the [User Agreement](/arrestexplorer/docs/user_agreement), though using the code with other data and without the ICJIA logo is.
 
 ## GUI and API
 

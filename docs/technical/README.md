@@ -11,16 +11,16 @@ This section is meant for researchers and data scientists who are interested in 
 
 ## Available Technical Guides
 
-- [About CHRI Data](/technical/chri) : For details about CHRI data and how it is maintained in Illinois by the Illinois State Police
+- [About CHRI Data](/arrestexplorer/docs/technical/chri) : For details about CHRI data and how it is maintained in Illinois by the Illinois State Police
 
-- [Data Preprocessing](/technical/data) : For details about what data filtering and processing ICJIA does to load CHRI data into _Arrest Explorer_
+- [Data Preprocessing](/arrestexplorer/docs/technical/data) : For details about what data filtering and processing ICJIA does to load CHRI data into _Arrest Explorer_
 
-- [API](/technical/api) : For details about API, which can be used to directly download aggregate data into R and Python scripts, etc.
+- [API](/arrestexplorer/docs/technical/api) : For details about API, which can be used to directly download aggregate data into R and Python scripts, etc.
 
-- [Open Source](/technical/open_source) : How to install a local version of Arrest Explorer and/or these documentation if you want to use the Application for your own data, etc.
+- [Open Source](/arrestexplorer/docs/technical/open_source) : How to install a local version of Arrest Explorer and/or these documentation if you want to use the Application for your own data, etc.
 
 ::: warning
-Any use of the application, its data code, or its source code is subject to the [User Agreement](/user_agreement)
+Any use of the application, its data code, or its source code is subject to the [User Agreement](/arrestexplorer/docs/user_agreement)
 :::
 
 ## Architecture of _Arrest Explorer_
@@ -72,7 +72,7 @@ API server ([ICJIA/arrest-explorer-api](https://github.com/ICJIA/arrest-explorer
 
 ### GUI client
 
-_Arrest Explorer_ GUI client app contains a project landing page (`/`) as well as the interactive data explorer (`/explore`). At build, the GUI client fetches data from the API server, reshapes the data for its use, and caches the data.
+_Arrest Explorer_ GUI client app contains a project landing page (`/`) as well as the interactive data explorer (`/arrestexplorer/docs/explore`). At build, the GUI client fetches data from the API server, reshapes the data for its use, and caches the data.
 
 GUI client app ([ICJIA/arrest-explorer](https://github.com/ICJIA/arrest-explorer)) is powered by the following key technologies:
 

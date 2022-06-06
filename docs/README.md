@@ -34,12 +34,12 @@ These procedures have minimal impact on analysis of the data in ways that would 
 ## Highlights in the Guide
 
 - Overview: Current page.
-- [Explorer](/explorer): How to use the Arrest Explorer's interactive data explorer.
-- [User Agreement](/user_agreement): The full Data User Agreement.
-- [CHRI](/technical/chri): Details on the _Arrest Explorer_'s data source.
-- [Data](/technical/data): Further explanation for the data provided by _Arrest Explorer_.
-- [Export](/technical/export-data): How to export data for external use.
-- [API server](/technical/api): How to get the _Arrest Explorer_ data directly from the API server.
+- [Explorer](/arrestexplorer/docs/explorer): How to use the Arrest Explorer's interactive data explorer.
+- [User Agreement](/arrestexplorer/docs/user_agreement): The full Data User Agreement.
+- [CHRI](/arrestexplorer/docs/technical/chri): Details on the _Arrest Explorer_'s data source.
+- [Data](/arrestexplorer/docs/technical/data): Further explanation for the data provided by _Arrest Explorer_.
+- [Export](/arrestexplorer/docs/technical/export-data): How to export data for external use.
+- [API server](/arrestexplorer/docs/technical/api): How to get the _Arrest Explorer_ data directly from the API server.
 
 ## Using Arrest Explorer
 
@@ -52,19 +52,19 @@ This plot is an embedded version of the **graphical interface**, if you have not
 > <a href="https://icjia.illinois.gov/arrestexplorer" target="\_blank">icjia.illinois.gov/arrestexplorer</a>
 
 ::: tip
-For more guidance, read the full user guide: [Using Arrest Explorer](/explorer)
+For more guidance, read the full user guide: [Using Arrest Explorer](/arrestexplorer/docs/explorer)
 :::
 
 You can download its underlying data from the export menu, or through the **programming interface**. For example here is a link to the raw data for the chart above:
 
 > [icjia.illinois.gov/arrestexplorer/api](https://icjia.illinois.gov/arrestexplorer/api)
 
-For more about using the data, how it is retrieved and aggregated, about Application Programming Interface, or how _Arrest Explorer_ works, see the [Technical](/technical/) pages.
+For more about using the data, how it is retrieved and aggregated, about Application Programming Interface, or how _Arrest Explorer_ works, see the [Technical](/arrestexplorer/docs/technical/) pages.
 
 For more technical details, see the [GitHub repository](https://github.com/ICJIA/arrest_explorer).
 
 ### User agreement
 
-By using data provided by _Arrest Explorer_, you are confirming that you accept the _Arrest Explorer_ [Data User Agreement](/User_Agreement).
+By using data provided by _Arrest Explorer_, you are confirming that you accept the _Arrest Explorer_ [Data User Agreement](/arrestexplorer/docs/User_Agreement).
 
 <FundingStatement />

@@ -6,7 +6,7 @@ meta:
 
 # _Arrest Explorer's_ Application Programming Interface
 
-A key component of _Arrest Explorer_ is its Application Programming Interface (API). This makes it easier to dynamically include the latest data from within _Arrest Explorer_ in other data visualizations or online publications. (Review [Data User Agreement](/User_Agreement) for terms and attribution.)
+A key component of _Arrest Explorer_ is its Application Programming Interface (API). This makes it easier to dynamically include the latest data from within _Arrest Explorer_ in other data visualizations or online publications. (Review [Data User Agreement](/arrestexplorer/docs/User_Agreement) for terms and attribution.)
 
 ## Learning the API
 
